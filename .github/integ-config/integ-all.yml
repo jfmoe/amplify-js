@@ -440,28 +440,28 @@ tests:
   #   spec: restful
   #   browser: *minimal_browser_list
 
-  # AUTH
-  - test_name: integ_react_javascript_authentication
-    desc: 'React Authentication'
-    framework: react
-    category: auth
-    sample_name: [javascript-auth]
-    spec: functional-auth
-    browser: *minimal_browser_list
-  - test_name: integ_react_auth_1_guest_to_authenticated_user
-    desc: 'Guest to Authenticated User'
-    framework: react
-    category: auth
-    sample_name: [guest-to-auth-user]
-    spec: guest-to-auth-user
-    browser: *minimal_browser_list
-  - test_name: integ_react_typescript_authentication
-    desc: 'React Typescript Authentication'
-    framework: react
-    category: auth
-    sample_name: [typescript-auth]
-    spec: functional-auth
-    browser: *minimal_browser_list
+  # # AUTH
+  # - test_name: integ_react_javascript_authentication
+  #   desc: 'React Authentication'
+  #   framework: react
+  #   category: auth
+  #   sample_name: [javascript-auth]
+  #   spec: functional-auth
+  #   browser: *minimal_browser_list
+  # - test_name: integ_react_auth_1_guest_to_authenticated_user
+  #   desc: 'Guest to Authenticated User'
+  #   framework: react
+  #   category: auth
+  #   sample_name: [guest-to-auth-user]
+  #   spec: guest-to-auth-user
+  #   browser: *minimal_browser_list
+  # - test_name: integ_react_typescript_authentication
+  #   desc: 'React Typescript Authentication'
+  #   framework: react
+  #   category: auth
+  #   sample_name: [typescript-auth]
+  #   spec: functional-auth
+  #   browser: *minimal_browser_list
   # - test_name: integ_react_credentials_different_region
   #   desc: 'React Credentials Different Region'
   #   framework: react

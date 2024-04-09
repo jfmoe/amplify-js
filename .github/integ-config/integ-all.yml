@@ -440,14 +440,14 @@ tests:
   #   spec: restful
   #   browser: *minimal_browser_list
 
-  # # AUTH
-  # - test_name: integ_react_javascript_authentication
-  #   desc: 'React Authentication'
-  #   framework: react
-  #   category: auth
-  #   sample_name: [javascript-auth]
-  #   spec: functional-auth
-  #   browser: *minimal_browser_list
+  # AUTH
+  - test_name: integ_react_javascript_authentication
+    desc: 'React Authentication'
+    framework: react
+    category: auth
+    sample_name: [javascript-auth]
+    spec: functional-auth
+    browser: *minimal_browser_list
   # - test_name: integ_react_auth_1_guest_to_authenticated_user
   #   desc: 'Guest to Authenticated User'
   #   framework: react

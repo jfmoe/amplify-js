@@ -89,8 +89,8 @@ jobs:
           $E2E_SPEC \
           $E2E_BROWSER \
           dev \
-          $E2E_AMPLIFY_JS_DIR" \
-          $E2E_BACKEND \
+          $E2E_AMPLIFY_JS_DIR \
+          $E2E_BACKEND" \
           -n $E2E_RETRY_COUNT
 
       - name: Run cypress tests for ${{ inputs.test_name }} prod
@@ -114,8 +114,8 @@ jobs:
           $E2E_SPEC \
           $E2E_BROWSER \
           prod \
-          $E2E_AMPLIFY_JS_DIR" \
-          $E2E_BACKEND \
+          $E2E_AMPLIFY_JS_DIR \
+          $E2E_BACKEND" \
           -n $E2E_RETRY_COUNT
       - name: Upload artifact
         uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2 https://github.com/actions/upload-artifact/commit/0b7f8abb1508181956e8e162db84b466c27e18ce

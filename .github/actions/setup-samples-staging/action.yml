@@ -32,7 +32,7 @@ runs:
       shell: bash
       working-directory: ./amplify-js-samples-staging
       env:
-        BRANCH: ${{ github.ref_name }}
+        BRANCH: v5-stable
       run: |
         if git ls-remote origin $BRANCH | grep -q refs/heads/$BRANCH$; then
             # Branch exists, checkout and echo success message

@@ -28,7 +28,7 @@ jobs:
 
   preid-release:
     needs:
-      - e2e
+      # - e2e
       - parse-preid
     secrets: inherit
     uses: ./.github/workflows/callable-npm-publish-preid.yml

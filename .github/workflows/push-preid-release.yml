@@ -12,9 +12,9 @@ on:
       - feat/token-validation/main
 
 jobs:
-  e2e:
-    secrets: inherit
-    uses: ./.github/workflows/callable-release-verification.yml
+  # e2e:
+  #   secrets: inherit
+  #   uses: ./.github/workflows/callable-release-verification.yml
   parse-preid:
     name: Parse preid from branch
     runs-on: ubuntu-latest

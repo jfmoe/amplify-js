@@ -11,6 +11,10 @@ jest.mock('react-native', () => ({
 		currentState: 'active',
 		addEventListener: (event, callback) => callback('active'),
 	},
+	AsyncStorage: {
+		getItem: () => new Promise(res => res('item')),
+		setItem: jest.fn(),
+	},
 	DeviceEventEmitter: {
 		addListener: jest.fn(),
 	},
@@ -23,11 +27,6 @@ jest.mock('react-native', () => ({
 	Platform: {
 		OS: defaultPlatform,
 	},
-}));
-
-jest.mock('@react-native-async-storage/async-storage', () => ({
-	getItem: () => new Promise(res => res('item')),
-	setItem: jest.fn(),
 }));
 
 jest.mock('@react-native-community/push-notification-ios', () => ({

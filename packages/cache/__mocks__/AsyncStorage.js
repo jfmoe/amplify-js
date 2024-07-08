@@ -1,6 +1,4 @@
-const AsyncStorage = jest.genMockFromModule(
-	'@react-native-async-storage/async-storage'
-);
+const AsyncStorage = jest.genMockFromModule('react-native');
 
 var store = {};
 var curSize = 0;

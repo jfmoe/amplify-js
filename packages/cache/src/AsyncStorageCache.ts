@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { Amplify, ConsoleLogger as Logger } from '@aws-amplify/core';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { AsyncStorage } from 'react-native';
 import { StorageCache } from './StorageCache';
 import { defaultConfig, getCurrTime } from './Utils';
 import { ICache } from './types';

@@ -67,7 +67,6 @@
     "js-cookie": "^2.2.1"
   },
   "devDependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.12",
     "compression-webpack-plugin": "^10.0.0",
     "cross-env": "^3.1.4",
     "genversion": "^2.2.0",
